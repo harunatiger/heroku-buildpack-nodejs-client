@@ -132,6 +132,9 @@ build_dependencies() {
 
 header "Building dependencies"
 build_dependencies | output "$LOG_FILE"
+npm run production
+
+
 
 cache_build() {
   local cache_directories=$(get_cache_directories)
